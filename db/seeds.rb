@@ -184,7 +184,7 @@ Film.destroy_all
         synopsis: "A middle-aged man leaves his wife for another woman. Shortly after, his ex-wife also begins a relationship with a younger partner. The film follows their struggles to find love amongst each other.",
         genre: "Drama",
         runtime: "130 minutes",
-        images: "https://s3.amazonaws.com/criterion-production/films/50c46391dcf93a0c61119b657cc105a4/NjRgeDmzeOxHkplWNoMOrld8T5ng9W_large.jpg"
+        image: "https://s3.amazonaws.com/criterion-production/films/50c46391dcf93a0c61119b657cc105a4/NjRgeDmzeOxHkplWNoMOrld8T5ng9W_large.jpg"
     )
 
     Film.create(
