@@ -1,0 +1,27 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  director: MyString
+  year: 1
+  synopsis: MyText
+  runtime: MyString
+  image: MyString
+  favorited: false
+  default: 
+  watched: false
+  default: 
+  notes: MyText
+
+two:
+  title: MyString
+  director: MyString
+  year: 1
+  synopsis: MyText
+  runtime: MyString
+  image: MyString
+  favorited: false
+  default: 
+  watched: false
+  default: 
+  notes: MyText
