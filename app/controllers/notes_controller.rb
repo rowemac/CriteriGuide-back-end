@@ -3,8 +3,15 @@ class NotesController < ApplicationController
 
   # GET /notes
   def index
-    @notes = Note.all
+    if params[:film_id]
+      @films = Film.find_by_id(params[:film_id])
+      @notes = @film.notes
+    
+    else
+      @notes = Note.all
 
+    end 
+    
     render json: @notes
   end
 
