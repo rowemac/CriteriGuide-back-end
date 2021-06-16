@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_06_14_231147) do
+ActiveRecord::Schema.define(version: 2021_06_16_004711) do
 
   create_table "films", force: :cascade do |t|
     t.string "title"
@@ -26,4 +26,15 @@ ActiveRecord::Schema.define(version: 2021_06_14_231147) do
     t.string "genre"
   end
 
+  create_table "notes", force: :cascade do |t|
+    t.string "title"
+    t.string "content"
+    t.string "time_marker"
+    t.integer "film_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["film_id"], name: "index_notes_on_film_id"
+  end
+
+  add_foreign_key "notes", "films"
 end
