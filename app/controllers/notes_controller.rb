@@ -4,7 +4,7 @@ class NotesController < ApplicationController
   # GET /notes
   def index
     if params[:film_id]
-      @films = Film.find_by_id(params[:film_id])
+      @film = Film.find_by_id(params[:film_id])
       @notes = @film.notes
     
     else
