@@ -42,7 +42,9 @@ class NotesController < ApplicationController
 
   # DELETE /notes/1
   def destroy
-    @note.destroy
+    if params[:film_id]
+      @note.destroy
+    end
   end
 
   private
